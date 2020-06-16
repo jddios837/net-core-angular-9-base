@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "echo Starting... && ng serve",
+    "start": "echo Starting... && ng serve --host 0.0.0.0",
     "build": "ng build",
     "build:ssr": "ng run WorldCities:server:dev",
     "test": "ng test",
@@ -13,10 +13,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "9.1.9",
+    "@angular/cdk": "^9.2.4",
     "@angular/common": "9.1.9",
     "@angular/compiler": "9.1.9",
     "@angular/core": "9.1.9",
     "@angular/forms": "9.1.9",
+    "@angular/material": "^9.2.4",
     "@angular/platform-browser": "9.1.9",
     "@angular/platform-browser-dynamic": "9.1.9",
     "@angular/platform-server": "9.1.9",
