@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 
 using Microsoft.EntityFrameworkCore;
 using WorldCities.Data;
+using System;
 
 namespace WorldCities
 {
@@ -83,6 +84,7 @@ namespace WorldCities
 
                 if (env.IsDevelopment())
                 {
+                    spa.Options.StartupTimeout = new TimeSpan(0, 5, 0);
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
