@@ -32,6 +32,14 @@ namespace WorldCities.Controllers
             string filterColumn = null,
             string filterQuery = null)
         {
+            //var cities = _context.Cities;
+
+            //if(!String.IsNullOrEmpty(filterColumn) 
+            //    && !String.IsNullOrEmpty(filterQuery))
+            //{
+            //    cities = cities.Where(c => c.Name.Contains(filter))
+            //}
+
             return await ApiResult<City>.CreateAsync(
                 _context.Cities,
                 pageIndex,
